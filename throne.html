@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pharaoh's Legacy - Throne Room</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300;1,600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="brand-group">
+          <div class="logo-box">
+            <span class="logo-text"
+              ><a href="index.html" class="logo-link">A.E</a></span
+            >
+          </div>
+          <div class="title-meta">
+            <h1 class="main-title">THE PHARAOH'S LEGACY</h1>
+            <p class="sub-title">ANCIENT EGYPTIAN ART GALLERY</p>
+          </div>
+        </div>
+
+        <nav class="gallery-filters" id="gallery-filters">
+          <button class="filter-btn active" data-filter="all">
+            <a href="gallery.html">Gallery</a>
+          </button>
+          <button class="filter-btn" data-filter="character">
+            <a href="about.html">About Us</a>
+          </button>
+          <button class="filter-btn" data-filter="character">
+            <a href="character.html">Character</a>
+          </button>
+          <button class="filter-btn" data-filter="environment">
+            <a href="throne.html">Throne Room</a>
+          </button>
+          <button class="filter-btn" data-filter="graphic">
+            <a href="posters.html">Posters</a>
+          </button>
+          <button class="filter-btn" data-filter="graphic">
+            <a href="encyclopedia.html">Encyclopedia</a>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="container">
+        <!-- Image Thumbnail Column with modal-trigger class -->
+        <div class="image-column">
+          <img
+            src="images/THROWWWWNNA.png"
+            onerror="
+              this.src =
+                'https://images.unsplash.com/photo-1543157145-f78b636d023d?auto=format&fit=crop&w=1200&q=80';
+              this.onerror = null;
+            "
+            alt="The Golden Audience Hall"
+            class="modal-trigger"
+            referrerpolicy="no-referrer"
+          />
+          <p
+            style="
+              text-align: center;
+              font-size: 0.75rem;
+              color: var(--gold-primary);
+              font-family: var(--font-serif);
+              margin-top: 0.75rem;
+              letter-spacing: 0.1em;
+            "
+          >
+            [ CLICK IMAGE TO OPEN HIGH RESOLUTION MODAL ]
+          </p>
+        </div>
+
+        <!-- Descriptive Text Column -->
+        <div class="text-column">
+          <h2>The Golden Audience Hall</h2>
+          <p>
+            An immersive environment design portraying the grand throne room of
+            Kemet. Modeled in rigid symmetrical perspective, the space projects
+            absolute cosmic stability and the divine order of Ma'at.
+          </p>
+
+          <h3>Architectural Elements</h3>
+          <ul>
+            <li>
+              <strong>Symmetrical Columns</strong>: Tall papyriform columns
+              carved with sacred cartouches flank the grand walkway,
+              establishing depth and height.
+            </li>
+            <li>
+              <strong>The Solar Hearth</strong>: Placed above the throne,
+              reflecting the golden solar rays of Ra onto the Pharaoh's seating
+              dais.
+            </li>
+            <li>
+              <strong>Hieroglyphic Reliefs</strong>: Walls detailed with
+              recessed frescoes documenting historical victories and divine
+              offerings.
+            </li>
+            <li>
+              <strong>Sacred Offerings</strong>: Royal urns, incense burners,
+              and carved gold statuary arranged symmetrically around the royal
+              court.
+            </li>
+          </ul>
+
+          <h3>Visual Theme</h3>
+          <p>
+            Constructed with a deep charcoal background juxtaposed against a
+            radiant, warm golden sheen, creating high-contrast celestial
+            illumination.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img
+        class="modal-content"
+        id="modalImg"
+        alt="Enlarged Throne Room View"
+      />
+    </div>
+
+    <footer class="main-footer">
+      <p>&copy; 2026 The Pharaoh's Legacy. All rights reserved.</p>
+      <p class="footer-sub">Curated Studio Art &amp; Design Studies</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pharaoh's Legacy - Character Study</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300;1,600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="brand-group">
+          <div class="logo-box">
+            <span class="logo-text"
+              ><a href="index.html" class="logo-link">A.E</a></span
+            >
+          </div>
+          <div class="title-meta">
+            <h1 class="main-title">THE PHARAOH'S LEGACY</h1>
+            <p class="sub-title">ANCIENT EGYPTIAN ART GALLERY</p>
+          </div>
+        </div>
+
+        <nav class="gallery-filters" id="gallery-filters">
+          <button class="filter-btn active" data-filter="all">
+            <a href="gallery.html">Gallery</a>
+          </button>
+          <button class="filter-btn" data-filter="character">
+            <a href="about.html">About Us</a>
+          </button>
+          <button class="filter-btn" data-filter="character">
+            <a href="character.html">Character</a>
+          </button>
+          <button class="filter-btn" data-filter="environment">
+            <a href="throne.html">Throne Room</a>
+          </button>
+          <button class="filter-btn" data-filter="graphic">
+            <a href="posters.html">Posters</a>
+          </button>
+          <button class="filter-btn" data-filter="graphic">
+            <a href="encyclopedia.html">Encyclopedia</a>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="container">
+        <!-- Image Thumbnail Column with modal-trigger class -->
+        <div class="image-column flip-card-container">
+          <div class="flip-card-inner">
+            <!-- Front Face: Primary Turnaround Group Lineup Graphic -->
+            <div class="flip-card-front">
+              <img
+                src="images/remessessssssssss.png"
+                onerror="
+                  this.src = 'https://unsplash.com';
+                  this.onerror = null;
+                "
+                alt="Pharaoh Rameses II Character Study - Front View"
+                class="modal-trigger"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+
+            <!-- Back Face: Alternate Viewport Graphic (e.g., Detail Closeup or Wireframe) -->
+            <div class="flip-card-back">
+              <img
+                src="
+                images/WhatsApp Image 2026-06-27 at 19.24.35.png"
+                onerror="
+                  this.src = 'https://unsplash.com';
+                  this.onerror = null;
+                "
+                alt="Pharaoh Rameses II Character Study - Alternate View"
+                class="modal-trigger"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+
+          <!-- Preserved native title layout element spacer -->
+          <p
+            style="
+              font-size: 0.75rem;
+              color: var(--gold-primary);
+              font-family: var(--font-serif);
+              margin-top: 0.75rem;
+              letter-spacing: 0.1em;
+            "
+          >
+            <a
+              href="character.html"
+              style="text-decoration: none; color: var(--font-serif)"
+            >
+              🔙Go back</a
+            >
+          </p>
+        </div>
+
+        <!-- Descriptive Text Column -->
+        <div class="text-column">
+          <h2>Pharaoh Rameses II Turnaround</h2>
+          <p>
+            This anatomical and costume turnaround captures the royal persona of
+            Pharaoh Rameses II, also known as Rameses the Great. The design
+            weaves hand-painted ornamental motifs with historical relics from
+            the nineteenth dynasty.
+          </p>
+
+          <h3>Artistic Directives</h3>
+          <ul>
+            <li>
+              <strong>Nemes Headdress</strong>: Styled with classic indigo and
+              gold bands, symbolizing royal divinity and solar alignment.
+            </li>
+            <li>
+              <strong>Uraeus (Sacred Cobra)</strong>: Positioned at the brow to
+              represent sovereign authority, protective strength, and readiness.
+            </li>
+            <li>
+              <strong>Shendyt Kilt</strong>: Gathered in fine symmetrical
+              pleating to match traditional Old and Middle Kingdom royal
+              statuary.
+            </li>
+            <li>
+              <strong>Jeweled Collar (Wesekh)</strong>: Embellished with lapis
+              lazuli, turquoise, and carnelian bead sequences.
+            </li>
+          </ul>
+
+          <h3>Design Process</h3>
+          <p>
+            The proportions follow Kemet's canonical grid system of eighteen
+            squares from sole to hairline, achieving timeless elegance and
+            imperial stature.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img
+        class="modal-content"
+        id="modalImg"
+        alt="Enlarged Character Study View"
+      />
+    </div>
+
+    <footer class="main-footer">
+      <p>&copy; 2026 The Pharaoh's Legacy. All rights reserved.</p>
+      <p class="footer-sub">Curated Studio Art &amp; Design Studies</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

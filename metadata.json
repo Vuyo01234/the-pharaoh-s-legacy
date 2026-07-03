@@ -1,0 +1,6 @@
+{
+  "name": "The Pharaoh's Legacy",
+  "description": "An elegant, curated digital portfolio showcasing Ancient Egyptian character studies, environments, and historical encyclopedia designs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

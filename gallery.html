@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pharaoh's Legacy - Ancient Egyptian Art Gallery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300;1,600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="brand-group">
+          <div class="logo-box">
+            <span class="logo-text"
+              ><a href="index.html" class="logo-link">A.E</a></span
+            >
+          </div>
+          <div class="title-meta">
+            <h1 class="main-title">THE PHARAOH'S LEGACY</h1>
+            <p class="sub-title">ANCIENT EGYPTIAN ART GALLERY</p>
+          </div>
+        </div>
+
+        <nav class="gallery-filters" id="gallery-filters">
+          <button class="filter-btn active" data-filter="all">
+            <a href="gallery.html">Gallery</a>
+          </button>
+          <button class="filter-btn" data-filter="character">
+            <a href="about.html">About Us</a>
+          </button>
+          <button class="filter-btn" data-filter="character">
+            <a href="character.html">Character</a>
+          </button>
+          <button class="filter-btn" data-filter="environment">
+            <a href="throne.html">Throne Room</a>
+          </button>
+          <button class="filter-btn" data-filter="graphic">
+            <a href="posters.html">Posters</a>
+          </button>
+          <button class="filter-btn" data-filter="graphic">
+            <a href="encyclopedia.html">Encyclopedia</a>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="gallery-grid">
+        <!-- Item 1: Pharaoh Rameses II -->
+        <article class="gallery-card" data-category="character">
+          <div class="card-image-wrapper">
+            <img
+              src="images/remesses front.png"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1608155686393-8fdd966d784d?auto=format&fit=crop&w=800&q=80';
+                this.onerror = null;
+              "
+              alt="Pharaoh Rameses II Character Study"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Character Study</span>
+            <h2 class="card-title">Pharaoh Rameses II Turnaround</h2>
+            <p class="card-description">
+              A detailed turnaround and anatomical study of Pharaoh Rameses II,
+              combining traditional regal vestments with hand-crafted digital
+              elements.
+            </p>
+          </div>
+        </article>
+
+        <!-- Item 2: Throne Room of Audience -->
+        <article class="gallery-card" data-category="environment">
+          <div class="card-image-wrapper">
+            <img
+              src="images/THROWWWWNNA.png"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1543157145-f78b636d023d?auto=format&fit=crop&w=800&q=80';
+                this.onerror = null;
+              "
+              alt="The Throne Room of Audience"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Environment Design</span>
+            <h2 class="card-title">The Golden Audience Hall</h2>
+            <p class="card-description">
+              The grand throne room environment crafted in classic symmetrical
+              perspective, organizing royal columns and sacred relics flanking
+              the throne.
+            </p>
+          </div>
+        </article>
+
+        <!-- Item 3: Encyclopaedia of Ancient Egypt -->
+        <article class="gallery-card" data-category="graphic">
+          <div class="card-image-wrapper">
+            <img
+              src="images/Untitled-4-03.png"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1600577916048-804c9191e36c?auto=format&fit=crop&w=800&q=80';
+                this.onerror = null;
+              "
+              alt="Encyclopaedia of Ancient Egypt Cover"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Graphic & Cover Art</span>
+            <h2 class="card-title">Encyclopaedia Cover Layout</h2>
+            <p class="card-description">
+              A premium cover mockup featuring balanced hieroglyphic margins,
+              structured typography hierarchy, and a central golden Nemes
+              headdress motif.
+            </p>
+          </div>
+        </article>
+
+        <!-- Item 4: Pyramids Campaign -->
+        <article class="gallery-card" data-category="graphic">
+          <div class="card-image-wrapper">
+            <img
+              src="images/Untitled-4-02.png"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1503177119275-0aa32b31d468?auto=format&fit=crop&w=800&q=80';
+                this.onerror = null;
+              "
+              alt="Pyramids Starry Sky Campaign"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Graphic & Print</span>
+            <h2 class="card-title">Pyramids Starry Sky Campaign</h2>
+            <p class="card-description">
+              Promotional presentation poster depicting the iconic pyramids of
+              Giza resting beneath an atmospheric, celestial stellar background.
+            </p>
+          </div>
+        </article>
+
+        <!-- Item 5: Nile Sphinx Silhouette -->
+        <article class="gallery-card" data-category="graphic">
+          <div class="card-image-wrapper">
+            <img
+              src="images/Untitled-4-05.png"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=800&q=80';
+                this.onerror = null;
+              "
+              alt="Nile Sphinx Silhouette Expo"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Graphic & Print</span>
+            <h2 class="card-title">Nile Sphinx Silhouette</h2>
+            <p class="card-description">
+              Atmospheric campaign graphics showcasing the Great Sphinx of Giza
+              aligned gracefully against the golden horizon of Kemet.
+            </p>
+          </div>
+        </article>
+
+        <!-- Item 6: Pharaoh Rameses Warrior Edition -->
+        <article class="gallery-card" data-category="graphic">
+          <div class="card-image-wrapper">
+            <img
+              src="images/Untitled-4-07.png"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1568289463675-15c3f1d24894?auto=format&fit=crop&w=800&q=80';
+                this.onerror = null;
+              "
+              alt="Pharaoh Rameses Warrior Edition"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Graphic & Print</span>
+            <h2 class="card-title">Rameses Warrior Poster</h2>
+            <p class="card-description">
+              A high-impact commemorative layout overlaying the pharaoh's royal
+              profile with bold presentation lettering.
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <p>&copy; 2026 The Pharaoh's Legacy. All rights reserved.</p>
+      <p class="footer-sub">Curated Studio Art &amp; Design Studies</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
