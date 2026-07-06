@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pharaoh's Legacy - Encyclopedia & Graphics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300;1,600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="brand-group">
+          <div class="logo-box">
+            <span class="logo-text"
+              ><a href="index.html" class="logo-link">A.E</a></span
+            >
+          </div>
+          <div class="title-meta">
+            <h1 class="main-title">THE PHARAOH'S LEGACY</h1>
+            <p class="sub-title">ANCIENT EGYPTIAN ART GALLERY</p>
+          </div>
+        </div>
+
+        <nav class="gallery-filters" id="gallery-filters">
+          <button class="filter-btn active" data-filter="all">
+            <a href="gallery.html">Gallery</a>
+          </button>
+          <button class="filter-btn" data-filter="character">
+            <a href="about.html">About Us</a>
+          </button>
+          <button class="filter-btn" data-filter="character">
+            <a href="character.html">Character</a>
+          </button>
+          <button class="filter-btn" data-filter="environment">
+            <a href="throne.html">Throne Room</a>
+          </button>
+          <button class="filter-btn" data-filter="graphic">
+            <a href="posters.html">Posters</a>
+          </button>
+          <button class="filter-btn" data-filter="graphic">
+            <a href="encyclopedia.html">Encyclopedia</a>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div style="text-align: center; margin-bottom: 2.5rem">
+        <h2
+          style="
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            color: var(--gold-primary);
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+          "
+        >
+          GRAPHIC DESIGN &amp; PUBLICATIONS
+        </h2>
+        <p
+          style="
+            font-family: var(--font-cursive);
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-style: italic;
+          "
+        >
+          Mockups, prints, and editorial campaign designs for the archives of
+          Kemet.
+        </p>
+        <p
+          style="
+            font-size: 0.75rem;
+            color: var(--gold-primary);
+            font-family: var(--font-serif);
+            margin-top: 1rem;
+            letter-spacing: 0.1em;
+          "
+        >
+          [ CLICK ANY IMAGE THUMBNAIL TO OPEN HIGH RESOLUTION MODAL ]
+        </p>
+      </div>
+
+      <div
+        class="gallery-grid"
+        style="
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 2.5rem;
+        "
+      >
+        <!-- Card 1: Encyclopaedia Cover Layout -->
+        <article class="gallery-card">
+          <div class="card-image-wrapper">
+            <img
+              src="images/POSTER1.jpg.jpeg"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1600577916048-804c9191e36c?auto=format&fit=crop&w=800&q=80';
+                this.onerror = null;
+              "
+              alt="Encyclopaedia Cover Layout"
+              class="modal-trigger"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Graphic &amp; Cover Art</span>
+            <h2 class="card-title">Poster |</h2>
+            <p class="card-description">
+              A premium cover mockup featuring balanced hieroglyphic margins,
+              structured typography hierarchy, and a central golden Nemes
+              headdress motif.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2: Pyramids Starry Sky Campaign -->
+        <article class="gallery-card">
+          <div class="card-image-wrapper">
+            <img
+              src="images/POSTER2.jpg.jpeg"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1503177119275-0aa32b31d468?auto=format&fit=crop&w=800&q=80';
+                this.onerror = null;
+              "
+              alt="Pyramids Starry Sky Campaign"
+              class="modal-trigger"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Graphic &amp; Print</span>
+            <h2 class="card-title">Poster ||</h2>
+            <p class="card-description">
+              Promotional presentation poster depicting the iconic pyramids of
+              Giza resting beneath an atmospheric, celestial stellar background.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 3: Nile Sphinx Silhouette -->
+        <article class="gallery-card">
+          <div class="card-image-wrapper">
+            <img
+              src="images/POSTER3.jpg.jpeg"
+              onerror="
+                this.src =
+                  'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=800&q=80';
+                this.onerror = null;
+              "
+              alt="Nile Sphinx Silhouette Expo"
+              class="modal-trigger"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-category">Graphic &amp; Print</span>
+            <h2 class="card-title">Poster |||</h2>
+            <p class="card-description">
+              Atmospheric campaign graphics showcasing the Great Sphinx of Giza
+              aligned gracefully against the golden horizon of Kemet.
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img
+        class="modal-content"
+        id="modalImg"
+        alt="Enlarged Publication View"
+      />
+    </div>
+
+    <footer class="main-footer">
+      <p>&copy; 2026 The Pharaoh's Legacy. All rights reserved.</p>
+      <p class="footer-sub">Curated Studio Art &amp; Design Studies</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
