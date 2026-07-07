@@ -35,42 +35,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 3. Premium Image Modal Logic
-  const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("modalImg");
-  const closeBtn = document.querySelector(".close");
-  const triggers = document.querySelectorAll(".modal-trigger");
 
-  if (modal && modalImg && triggers.length > 0) {
-    triggers.forEach((trigger) => {
-      trigger.addEventListener("click", () => {
-        modal.classList.add("show");
-        modalImg.src = trigger.src;
-        // Lock body scrolling when modal is active
-        document.body.style.overflow = "hidden";
-      });
-    });
-
-    const hideModal = () => {
-      modal.classList.remove("show");
-      document.body.style.overflow = "";
-    };
-
-    if (closeBtn) {
-      closeBtn.addEventListener("click", hideModal);
-    }
-
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        hideModal();
-      }
-    });
-
-    // Keyboard support: Escape key to close
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && modal.classList.contains("show")) {
-        hideModal();
-      }
-    });
-  }
 });

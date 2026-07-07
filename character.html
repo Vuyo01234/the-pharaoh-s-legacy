@@ -198,5 +198,44 @@
     </footer>
 
     <script src="/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+        const closeBtn = document.querySelector(".close");
+        const triggers = document.querySelectorAll(".modal-trigger");
+
+        if (modal && modalImg) {
+          triggers.forEach((trigger) => {
+            trigger.addEventListener("click", () => {
+              modal.classList.add("show");
+              modalImg.src = trigger.src;
+              document.body.style.overflow = "hidden";
+            });
+          });
+
+          const hideModal = () => {
+            modal.classList.remove("show");
+            document.body.style.overflow = "";
+          };
+
+          if (closeBtn) {
+            closeBtn.addEventListener("click", hideModal);
+          }
+
+          modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+              hideModal();
+            }
+          });
+
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && modal.classList.contains("show")) {
+              hideModal();
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
