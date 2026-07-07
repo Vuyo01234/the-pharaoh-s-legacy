@@ -19,10 +19,13 @@ export default defineConfig(() => {
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, "index.html"),
-          landing: path.resolve(__dirname, "index.html"),
+          about: path.resolve(__dirname, "about.html"),
           character: path.resolve(__dirname, "character.html"),
-          throne: path.resolve(__dirname, "throne.html"),
+          dynamic: path.resolve(__dirname, "dynamic.html"),
           encyclopedia: path.resolve(__dirname, "encyclopedia.html"),
+          gallery: path.resolve(__dirname, "gallery.html"),
+          posters: path.resolve(__dirname, "posters.html"),
+          throne: path.resolve(__dirname, "throne.html"),
         },
       },
     },
